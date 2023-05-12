@@ -1,0 +1,8 @@
+toughness_vals <- c(0.47, 0.58, 0.67, 0.70, 0.77, 0.79, 0.81, 0.82, 0.84, 0.86, 0.91, 0.95, 0.98, 1.01, 1.04)
+class(toughness_vals)
+summary(toughness_vals)
+sd(toughness_vals, na.rm = FALSE)
+x = rnorm(-1, 0, 1)
+y = rnorm(2, 0.8133, 0.1596723)
+qqnorm(toughness_vals, xlab = "norm", ylab = "Toughness", main = "Toughness of Concerete Q-Q Plot")
+qqline(toughness_vals)
